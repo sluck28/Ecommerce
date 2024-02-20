@@ -1,0 +1,27 @@
+h1{
+   color: #000;
+}
+/* maneras de seleccionar elementos especificos de HTML */
+/* h1 span{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h2 span{
+    color :aqua;
+} */
+
+/* Se le llama trabajar por modulos de la siguiente manera 
+    en la que trabajamos con la clase y sus elementos de  cada una de las clases
+*/
+.navegacion{
+    background-color: aquamarine;
+}
+
+.navegacion a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
