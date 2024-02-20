@@ -1,27 +1,72 @@
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 h1{
    color: #000;
 }
-/* maneras de seleccionar elementos especificos de HTML */
-/* h1 span{
-    color: red;
-}
+
+/*Globales*/
+
 a{
-    text-decoration: none;
-}
-h2 span{
-    color :aqua;
-} */
-
-/* Se le llama trabajar por modulos de la siguiente manera 
-    en la que trabajamos con la clase y sus elementos de  cada una de las clases
-*/
-.navegacion{
-    background-color: aquamarine;
+    text-decoration: none;    
+    color: #000;
 }
 
-.navegacion a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: blue;
+/*Header y navegacion*/
+.nombre-sitio{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
     font-weight: bold;
 }
+.nombre-sitio span{
+    color: #037bc0;
+}
+
+.navegacion{
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 50px;
+
+}
+
+
+
+.pie-pagina p {
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+/*Box model*/
+.sobre-nosotros
+{
+    background-color: red;
+    /*El ancho*/
+    width: 200px;
+    /*El relleno del model para que se tenga una separacion 
+    padding agrega en todos los lados
+    */
+    padding:25px;
+    margin-top: 100px;
+    box-sizing: border-box;
+
+}
+
+/*Box model
+
+    Cada elemento tiene un disply por default
+
+    Display block: se colocara abajo del otro sin importar su tamaño
+
+    Display in line: se colocan en linea vertical no se le peude aplicar whitd y paddi
+
+    Display in line block :
+*/
+
+
