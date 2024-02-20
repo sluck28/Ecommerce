@@ -1,0 +1,21 @@
+Flexbox
+
+permite distribuir los elementos en una direccion 
+
+row() fila column() columna
+
+
+flex-direction column arruiba hacia abajo
+flex-direction row de izquierda a derecha
+
+Horizontal y vertical
+
+justify-content si flex direction es row
+
+y 
+
+align-content
+
+
+
+

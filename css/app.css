@@ -29,13 +29,27 @@ a{
 }
 
 .navegacion{
-    border-color: #e1e1e1;
-    border-top-style: solid;
-    border-width: 1px;
-    padding: 50px;
+   
+    padding: 20px 0;
+    /*Se habilita el display felx*/
+    display: flex;/*Por defecto es row*/
+    justify-content: space-between ;
+    
+    
+}
+
+.contenedor-navegacion{
+
+    border-top: solid 1px #e1e1e1;
 
 }
 
+.contenedor{
+    /*Para centrar el contenido del navegador*/
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 
 
 .pie-pagina p {
@@ -68,5 +82,20 @@ a{
 
     Display in line block :
 */
+
+/*
+Agregando una img con css
+*/
+.hero{
+    background-image: url(../images/principal.jpg);
+    height: 550px;
+    /*Usamos background size cover para que la imagen aparezca en todo el html*/
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
 
 
