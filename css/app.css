@@ -203,7 +203,47 @@ Agregando una img con css
     background-color: #037bc0;
 }
 
+.texto-producto h3{
+    margin: 0;
+}
+
+
+.texto-producto p{
+    margin: 0 0 .5rem 0;
+}
+
 .texto-producto{
     text-align: center;
     color: white;
-}   
+    padding: 2rem;
+}       
+
+.texto-producto .precio{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.texto-producto  a{
+    color: white;
+    font-weight: 900;
+    background-color: #8cbc00;
+    /*Abarca todo el ancho del contenedor*/
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.texto-producto  a:hover{
+    background-color: #769602;
+    color: black;
+    /* transform: scale(.9); */
+    transition: background-color .3s ease;
+}
+
+.producto img{
+    transition: background-color .3s ease;
+}
+
+.producto img:hover{
+    /*Para que se haga la imagen un poco mas pequeña cuando se pasa el mouse*/
+    transform: scale(.8);
+}
