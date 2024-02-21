@@ -12,9 +12,58 @@ Horizontal y vertical
 
 justify-content si flex direction es row
 
-y 
 
-align-content
+**Display Grid **
+Para crear columnas utilizamos 
+
+grid-template-columns
+
+grid-template-rows
+
+/*Definir un diseño**/
+
+grid-lines : muestra las lienas del grid
+
+/*Tipos de unidades **/
+
+Absolutas : unidades Absolutas que son las exactas  
+
+Relativas : em, rem , vh
+
+/*Formas de escribir CSS**/
+
+BEM
+Block element Modifier{
+
+}
+
+Utilidades
+.text-center{}
+
+Modulo 
+.card{
+    color:red;
+}
+
+
+/***/CUANDO UTILIZAR GRID O FLEX BOX /**
+
+Flexbox 
+
+Para la alineacion de contenedores
+
+
+GRID
+
+para definir el layout del sitio web
+columnas o elementos
+
+
+
+
+
+
+
 
 
 

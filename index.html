@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/app.css">
     <title>Eccomerce</title>
   </head>
@@ -17,7 +20,7 @@
 
     <div class="contenedor-navegacion">
 
-        <nav  class="navegacion contenedor">
+        <nav  class="navegacion contenedor categoria">
             <a href="">Inicio</a>
             <a href="">Nosotros</a>
             <a href="">Tienda</a>
@@ -31,38 +34,45 @@
      <div class="hero">
      </div>
 
-    <section>
+    <section class="contenedor categorias">
         <!-- Si se tiene un heading es una seccion -->
            <h2>Categoria de <span>productos</span></h2>
-           <div>
-               <img src="images/categoria1.jpg" alt="imagen categoria" />
-               <a href="#">Oficina</a>
+
+           <div class="listado-categorias">
+               <div class="categoria">
+                   <img src="images/categoria1.jpg" alt="imagen categoria" />
+                   <a href="#">Oficina</a>
+               </div>
+               <div class="categoria">
+                   <img src="images/categoria2.jpg" alt="imagen categoria" />
+                   <a href="#">Hogar</a>
+               </div>
+               <div class="categoria">
+                   <img src="images/categoria3.jpg" alt="imagen categoria" />
+                   <a href="#">Cocina</a>
+               </div>
            </div>
-           <div>
-               <img src="images/categoria2.jpg" alt="imagen categoria" />
-               <a href="#">Hogar</a>
-           </div>
-           <div>
-               <img src="images/categoria3.jpg" alt="imagen categoria" />
-               <a href="#">Cocina</a>
-           </div>
+
    </section>
    
-   <section>
+   <section class="sobre-nosotros">
     <!-- div para agrupar contenido -->
-        <div class="sobre-nosotros">
-            <h2>Sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, quisquam labore vel dolores ullam nulla hic, nihil voluptatem quam laborum voluptatum sapiente! Deserunt ratione asperiores illo reiciendis! Doloremque, quidem. Possimus.</p>
+        <div class="contenedor sobre-nosotros-grid"> 
+            <div class="sobre-nosotros-texto">
+
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, quisquam labore vel dolores ullam nulla hic, nihil voluptatem quam laborum voluptatum sapiente! Deserunt ratione asperiores illo reiciendis! Doloremque, quidem. Possimus.</p>
+            </div>   
         </div>
    </section>
 
-    <main>
+    <main class="contenido-principal contenedor">  
           <!-- el contenido principal de nuestra pagina web con main solo debe de tener uno por html -->
-        <h2>Nuestros Productos</h2>
-        <div>
-            <div>
+        <h2 class="text-center">Nuestros Productos</h2>
+        <div class="listado-productos">
+            <div class="producto">
                 <img src="images/producto1.jpg" alt="producto1"/>
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 1</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$10000</p>
@@ -71,9 +81,9 @@
                 </div>
                 <!-- producto -->
             </div>
-            <div>
+            <div class="producto">
                 <img src="images/producto2.jpg" alt="producto2"/>
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 2</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$20000</p>
@@ -83,9 +93,9 @@
                 <!-- producto -->
             </div>
 
-            <div>
+            <div class="producto">
                 <img src="images/producto3.jpg" alt="producto3"/>
-                <div>
+                <div class="texto-producto" >
                     <h3>Producto 3</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$30000</p>
@@ -95,9 +105,9 @@
                 <!-- producto -->
             </div>
 
-            <div>
+            <div class="producto">
                 <img src="images/producto4.jpg" alt="producto4"/>
-                <div>
+                <div class="texto-producto  ">
                     <h3>Producto 4</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$10000</p>
@@ -107,9 +117,9 @@
                 <!-- producto -->
             </div>
 
-            <div>
+            <div class="producto">
                 <img src="images/producto5.jpg" alt="producto5"/>
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 5</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$10000</p>
@@ -119,9 +129,9 @@
                 <!-- producto -->
             </div>
 
-            <div>
+            <div class="producto">
                 <img src="images/producto6.jpg" alt="producto6"/>
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 6</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quasi repellat doloribus facere sint atque, nisi molestiae, saepe explicabo cum minus nesciunt sequi pariatur quis delectus ratione deleniti! Nemo, libero!</p>
                     <p>$10000</p>
@@ -130,44 +140,45 @@
                 </div>
                 <!-- producto -->
             </div>
-
               <!-- Fin listado de productos -->
         </div>                
     </main>
         
-    <footer class="pie-pagina">
-        <div>
-            <h3>Categorias</h3>
-            <nav>
-                <a href="#">Cocina</a>
-                <a href="#">Oficina</a>
-                <a href="#">Jardin</a>
-                <a href="#">Cochera</a>
-                <a href="#">Dormitorias</a>
-            </nav>
-        </div>
-        <div>
-            <h3>Sobre nosotros</h3>
-            <nav>
-                <a href="#">Nuestra historia</a>
-                <a href="#">Mision, Vision y Valores</a>
-                <a href="#">Carreras</a>
-                <a href="#">Politicas de privacidad</a>
-                <a href="#">Terminos del Servicio</a>
-            </nav>
-        </div>
-        <div>
-            <h3>Soporte</h3>
-            <nav>
-                <a href="#">Preguntas frecuentes</a>
-                <a href="#">Ayuda en linea</a>
-                <a href="#">Confianza y seguridad</a>
-                
-            </nav>
-        </div>
-
-
-        <p>Todos los derechos Reservados Juan Alfredo Alvarado Roj@s 2024</p>
+    <footer>
+        <div class="contenedor-navegacion">
+            <div class="contenedor listado-categorias">
+    
+                <div class="categoria">
+                    <h3>Categorias</h3>
+                    <nav>
+                        <a href="#">Cocina</a>
+                        <a href="#">Oficina</a>
+                        <a href="#">Jardin</a>
+                        <a href="#">Cochera</a>
+                        <a href="#">Dormitorias</a>
+                    </nav>
+                </div>
+                <div class="categoria">
+                    <h3>Sobre nosotros</h3>
+                    <nav>
+                        <a href="#">Nuestra historia</a>
+                        <a href="#">Mision, Vision y Valores</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Politicas de privacidad</a>
+                        <a href="#">Terminos del Servicio</a>
+                    </nav>
+                </div>
+                <div class="categoria">
+                    <h3>Soporte</h3>
+                    <nav>
+                        <a href="#">Preguntas   frecuentes</a>
+                        <a href="#">Ayuda en linea</a>
+                        <a href="#">Confianza y seguridad</a>                        
+                    </nav>
+                </div>
+            </div>
+            <p>Todos los derechos Reservados Juan Alfredo Alvarado Roj@s 2024</p>
+        </div>        
     </footer>
   </body>
 </html>

@@ -1,76 +1,96 @@
-
+/*Globales*/
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+    font-size: 62.5%;
 
-h1{
-   color: #000;
 }
 
-/*Globales*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
-a{
-    text-decoration: none;    
+body {
+    font-size: 1.6rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    margin: 0 0  5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
     color: #000;
 }
 
+img {
+    /*Para que la imagen se expanda en el div del contenedor*/
+    max-width: 100%;
+    display: block;
+}
+
+
+
 /*Header y navegacion*/
-.nombre-sitio{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.nombre-sitio {
+    margin-top: 5rem;
+    margin-bottom: 5rem ;
     text-align: center;
     font-weight: bold;
+    
 }
-.nombre-sitio span{
+
+.nombre-sitio span {
     color: #037bc0;
 }
 
-.navegacion{
-   
-    padding: 20px 0;
+.navegacion {
+
+    padding: 2rem 0;
     /*Se habilita el display felx*/
-    display: flex;/*Por defecto es row*/
-    justify-content: space-between ;
-    
-    
-}
+    display: flex;
+    /*Por defecto es row*/
+    justify-content: space-between;
 
-.contenedor-navegacion{
-
-    border-top: solid 1px #e1e1e1;
 
 }
 
-.contenedor{
+.contenedor-navegacion {
+
+    border-top: solid .1rem #e1e1e1;
+
+}
+
+.contenedor {
     /*Para centrar el contenido del navegador*/
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 
 }
-
-
-.pie-pagina p {
-    font-weight: bold;
-    font-family: fantasy;
+/* Utilidades */
+.text-center{
+    text-align: center;
 }
 
-/*Box model*/
-.sobre-nosotros
-{
-    background-color: red;
-    /*El ancho*/
-    width: 200px;
-    /*El relleno del model para que se tenga una separacion 
-    padding agrega en todos los lados
-    */
-    padding:25px;
-    margin-top: 100px;
-    box-sizing: border-box;
-
-}
 
 /*Box model
 
@@ -86,16 +106,104 @@ a{
 /*
 Agregando una img con css
 */
-.hero{
+.hero {
     background-image: url(../images/principal.jpg);
-    height: 550px;
+    height: 55rem;
     /*Usamos background size cover para que la imagen aparezca en todo el html*/
     background-size: cover;
     background-repeat: no-repeat;
+    /*Para posicionar una imagen*/
+    background-position: center center; 
+    
 
+}
+
+/*Categorias*/
+
+.categorias h2, h3   {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.listado-categorias {
+    display: grid;
+    /*Se recominda usar fr que es como una fraccion*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 
 }
 
 
+.categoria a {
+    text-align: center;
+    display: block; 
+    font-size: 1.5rem;
+    padding: 2rem;
+    
+}
 
+/*hover para el posicionamiento y cambie de color*/
+.categoria a:hover {
+    background-color: #037bc0;
+    color: white;
+    border-bottom-right-radius: 4rem;
+}
 
+/*Sobre nosotros*/
+.sobre-nosotros{
+    /*Para poner la imagen y el texto **/
+    background-image: linear-gradient(to right,transparent 50%,  #037bc0 50%, #037bc0 100%  ),url(../images/nosotros.jpg);
+    padding: 10rem 0;  
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+}      
+
+.sobre-nosotros-grid{
+    /* Con Grid */
+        /* display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 8rem; */
+
+        /* Flex box */
+        display: flex;
+        justify-content: flex-end;
+        
+
+}
+
+.sobre-nosotros-texto{
+    /* Con grid */
+    /*Para posicionar el hijo en la columna*/
+    /* grid-column: 2 /3; 
+    color: white; */
+
+    /* Flex box */
+    flex-basis: 45%;  /*Ancho del elemento*/
+    color: white;
+
+}
+
+.sobre-nosotros-texto h2{
+    /* Con grid */
+    /* color: white    ;*/
+
+    /* Flex box */
+
+    color: white;
+} 
+
+/*Productos*/
+.contenido-principal{
+    padding-top: 5rem;
+    
+}
+
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: white;
+}   
