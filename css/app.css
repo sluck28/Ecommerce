@@ -247,3 +247,92 @@ Agregando una img con css
     /*Para que se haga la imagen un poco mas pequeña cuando se pasa el mouse*/
     transform: scale(.8);
 }
+/*Acomodamos el grid para los productos*/
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /* dar espacio entre productos en fila y columna*/
+    gap: 2rem;
+    
+}
+/*Seleccionamos el producto de uno en uno para acomodarlo*/
+/* con nth child */
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+/* arreglando la imagen con object fit */
+.producto:nth-child(1) img{
+    height: 55rem;
+    width: 100%;
+    object-fit: cover;
+    background-position: left center;
+}
+
+
+.producto:nth-child(2){
+    /* inicio */
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) img,
+.producto:nth-child(2) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+.producto:nth-child(4) img,
+.producto:nth-child(5) img,
+.producto:nth-child(6) img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6){
+    grid-column-start:5;
+    grid-column-end: 7;
+}
+
+/* Footer */
+
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3);
+    gap: 2rem;
+    
+}
+
