@@ -100,6 +100,11 @@ img {
     text-transform: uppercase;
     padding: 1rem;
     border-radius: 4rem;
+    border: none;
+}
+.btn:hover{
+    /* para agregar la mano al dar claick en el boton */
+    cursor: pointer;
 }
 
 .max-width-30{
@@ -446,5 +451,57 @@ Agregando una img con css
     width: 40rem;
     height: 40rem;
     object-fit: cover;
+
+}
+
+/* Formulario */
+
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset{
+
+    border: 1px solid black;
+    margin-bottom: 2rem;
+
+}
+
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+}
+
+.campos {
+    /* acomodando los inputs del formulario */
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campos label{
+    flex-basis: 10rem;
+}
+
+
+.campos input[type="tel"],
+.campos input[type="email"],
+.campos input[type="text"],
+.campos input:not([type="radio"]),
+select,
+textarea{
+    flex: 1;
+    border-radius: 2rem;
+    border: 1px solid #e1e1e1;
+}
+
+btn:hover{
 
 }

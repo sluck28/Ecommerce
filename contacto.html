@@ -1,0 +1,161 @@
+<!--Estructura basica de HTML-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/app.css" />
+  <title>Eccomerce-Contacto</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+  </header>
+
+  <div class="contenedor-navegacion">
+    <nav class="navegacion contenedor categoria">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="blog.html">Blog</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+  <!--Displays in line-->
+
+  <main class="contenido-principal contenedor">
+
+    <h2 class="text-center">Contacto</h2>
+    <!-- creando formulario contacto -->
+    <form action="" class="formulario">
+      <!-- agrupa los campos y agrega una linea -->
+      <fieldset>
+        <legend>Tus datos:</legend>
+        <div class="campos">
+          <label for="nombre">Nombre</label>
+          <input class="input"  type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+        </div>
+
+        <div class="campos">
+          <label for="asunto">Asunto :</label>
+          <input type="text" name="asunto" id="asunto" placeholder="Asunto" required/>
+        </div>
+
+        <div class="campos">
+          <label for="email">Email :</label>
+          <input type="email" name="email" id="email" placeholder="Correo" required />
+        </div>
+
+        <div class="campos">
+          <label for="tel">Telefono:</label>
+          <input type="tel" id="tel" placeholder="Tu telefono" required>
+        </div>
+
+
+        <div class="campos">
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="date" required>
+        </div>
+
+        <div class="campos">
+          <label for="Mensaje">Fecha:</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        </div>
+
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Pais</legend>
+        <div class="campos">
+          <select name="" id="">
+              <option value="MX" >----Selecciona un pais-----</option>
+              <option value="">México</option>
+              <option value="AR">Argentina</option>
+              <option value="BR">Brazil</option>
+              <option value="CO">Colombia</option>
+              <option value="PR">Portugal</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacion extra</legend>
+
+        <!-- un input debe de tener el mismo name para que se seleccione 
+          solo uno
+        -->
+        <div class="campos">
+          <label for="Cliente">Cliente</label>
+          <input type="radio" name="tipo" id="">
+        </div>
+
+        <div class="campos">
+          <label for="Cliente">Proveedor</label>
+          <input type="radio" name="tipo" id="">
+        </div>
+
+        <div class="campos">
+          <label for="Categoria">Categoria de interes</label>
+          <input list="Categorias" name="Categorias">
+          <!-- datalist para hacer un option de busqueda en chrome -->
+            <datalist id="Categorias">
+              <option value="Cocina">
+              <option value="Oficina">
+              <option value="Jardin">
+              <option value="Cochera">
+              <option value="Dormitorias">
+            </datalist>
+        </div>
+      </fieldset>
+      <input class="input btn" type="submit" value="Enviar Formulario">
+
+    </form>
+
+  </main>
+
+  <footer class="site-footer ">
+    <div class="grid-footer contenedor">
+      <div>
+        <h3>Categorias</h3>
+        <nav class="footer-menu">
+          <a href="#">Cocina</a>
+          <a href="#">Oficina</a>
+          <a href="#">Jardin</a>
+          <a href="#">Cochera</a>
+          <a href="#">Dormitorias</a>
+        </nav>
+      </div>
+      <div>
+        <h3>Sobre nosotros</h3>
+        <nav class="footer-menu">
+          <a href="#">Nuestra historia</a>
+          <a href="#">Mision, Vision y Valores</a>
+          <a href="#">Carreras</a>
+          <a href="#">Politicas de privacidad</a>
+          <a href="#">Terminos del Servicio</a>
+        </nav>
+      </div>
+      <div>
+        <h3>Soporte</h3>
+        <nav class="footer-menu">
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Ayuda en linea</a>
+          <a href="#">Confianza y seguridad</a>
+        </nav>
+      </div>
+    </div>
+    <p class="copyrigth">Todos los derechos Reservados Juan Alfredo Alvarado Roj@s 2024</p>
+  </footer>
+</body>
+
+</html>
